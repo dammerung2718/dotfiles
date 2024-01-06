@@ -1,0 +1,47 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+
+# editor
+cask "font-jetbrains-mono-nerd-font"
+cask "sublime-text"
+cask "visual-studio-code"
+pkg "helix"
+
+# languages
+apt "golang"
+brew "go"
+
+# package managers
+brew "pnpm"
+pkg "gh"
+pkg "yarn"
+
+# shell
+apt "zsh"
+apt "fd-find"
+brew "fd"
+brew "gnu-sed"
+brew "tidy-html5"
+pkg "entr"
+pkg "fzf"
+pkg "moreutils"
+pkg "pandoc"
+pkg "stow"
+pkg "tree"
+pkg "unar"
+pkg "wget"
+
+# misc
+pkg "redis"
+
+# apps
+cask "alacritty"
+cask "discord"
+cask "firefox"
+cask "mongodb-compass"
+cask "mos"
+cask "openvpn-connect"
+cask "postman"
+cask "spotify"
+cask "telegram"
+cask "twist"

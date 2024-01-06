@@ -1,0 +1,30 @@
+# env
+export EDITOR=hx
+
+# alias
+if test $(uname) = Linux; then
+  alias fd='fdfind'
+fi
+
+# ohmyzsh
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="robbyrussell"
+plugins=(git)
+. $ZSH/oh-my-zsh.sh
+
+# brew
+if test $(uname) = Darwin; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+fi
+
+# commands
+cdf() {
+  cd $(fd . $HOME -d 2 -t d | fzf)
+}
+
+# rust
+. "$HOME/.cargo/env"
+
+# go
+export PATH="$PATH:$HOME/go/bin"

@@ -1,0 +1,35 @@
+#!/bin/sh
+set -e
+
+# install package manager
+if test $(uname) = Darwin && test -z $(which brew); then
+	NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# install programs
+OS=$(uname) scripts/generate
+if test $(uname) = Darwin; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+	brew bundle
+	rm Brewfile
+elif test $(uname) = Linux; then
+	sudo apt install -y $(bash Aptfile)
+	rm Aptfile
+fi
+
+# rust
+test ! -d $HOME/.cargo \
+	&& curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+. $HOME/.cargo/env
+rustup component add rust-analyzer
+
+# install ohmyzsh
+test $SHELL != $(which zsh) && chsh -s $(which zsh)
+
+test ! -d $HOME/.oh-my-zsh \
+  && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+rm -f $HOME/.zshrc $HOME/.zshrc.pre-oh-my-zsh
+
+# symlink dotfiles
+stow -t $HOME cfg

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if test "$OS" = Darwin; then
+  cat Pkgfile                                              \
+    | grep -e '^pkg' -e '^tap' -e '^brew' -e '^cask'       \
+    | sed 's/^pkg /brew /g'                                \
+    > Brewfile
+elif test "$OS" = Linux; then
+  cat Pkgfile                                              \
+    | grep -e '^pkg' -e '^apt' -e '^app'                   \
+    | sed 's/^pkg/echo/g; s/^apt/echo/g; s/^app/echo/g'    \
+    > Aptfile
+else
+  echo 'unknown $OS:' "'$OS'"
+  echo "  expected either 'Darwin' or 'Linux'"
+  exit 1
+fi
