@@ -1,4 +1,7 @@
 {
+  "project_panel": {
+    "dock": "right"
+  },
   "languages": {
     "Markdown": {
       "show_copilot_suggestions": false
