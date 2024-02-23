@@ -1,0 +1,58 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "mongodb/brew"
+
+# editor
+cask "font-iosevka-nerd-font"
+cask "sublime-merge"
+cask "zed"
+pkg "neovim"
+pkg "tmux"
+
+# languages
+dnf "golang"
+brew "go"
+brew "node"
+
+# package managers
+pkg "gh"
+
+# tools
+brew "fd"
+brew "gnu-sed"
+brew "tidy-html5"
+dnf "fd-find"
+dnf "zsh"
+pkg "cmake"
+pkg "entr"
+pkg "fzf"
+pkg "jq"
+pkg "moreutils"
+pkg "pandoc"
+pkg "ripgrep"
+pkg "stow"
+pkg "tree"
+pkg "unar"
+pkg "wget"
+
+# libraries
+brew "glfw"
+brew "pkg-config"
+
+# db
+brew "mongodb-community@7.0"
+pkg "redis"
+
+# apps
+cask "ableton-live-suite"
+cask "arc"
+cask "discord"
+cask "iterm2"
+cask "mongodb-compass"
+cask "mos"
+cask "openvpn-connect"
+cask "postico"
+cask "postman"
+cask "spotify"
+cask "telegram"

@@ -1,0 +1,43 @@
+#!/bin/sh
+set -e
+
+# install package manager
+if test $(uname) = Darwin && test -z $(which brew); then
+	NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# install programs
+OS=$(uname) scripts/generate
+if test $(uname) = Darwin; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+	brew bundle --cleanup
+	rm Brewfile
+elif test $(uname) = Linux; then
+	sudo dnf install -y $(bash Dnffile)
+	rm Dnffile
+fi
+
+# rust
+test ! -d $HOME/.cargo &&
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+. $HOME/.cargo/env
+rustup component add rust-analyzer
+
+# go
+go install github.com/boyter/scc/v3@latest
+
+# ohmyzsh
+test $SHELL != $(which zsh) && chsh -s $(which zsh)
+
+test ! -d $HOME/.oh-my-zsh &&
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+rm -f $HOME/.zshrc $HOME/.zshrc.pre-oh-my-zsh
+
+# services
+if test $(uname) = Darwin; then
+	brew services start mongodb-community@7.0
+fi
+
+# symlinks
+stow -t $HOME cfg

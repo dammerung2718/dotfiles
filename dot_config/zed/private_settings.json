@@ -1,0 +1,15 @@
+{
+  "languages": {
+    "Markdown": {
+      "show_copilot_suggestions": false
+    }
+  },
+  "theme": "Rosé Pine",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "base_keymap": "VSCode",
+  "buffer_line_height": "comfortable",
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ensure_final_newline_on_save": true
+}
