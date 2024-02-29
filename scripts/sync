@@ -22,6 +22,8 @@ test ! -d $HOME/.cargo &&
 	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 . $HOME/.cargo/env
 rustup component add rust-analyzer
+cargo install cargo-binstall
+cargo binstall bacon
 
 # go
 go install github.com/boyter/scc/v3@latest
