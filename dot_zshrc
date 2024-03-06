@@ -1,7 +1,5 @@
 # env
-export EDITOR=nvim
 export PATH="$PATH:$HOME/.bin"
-export TERM=tmux-256color
 
 # alias
 if test $(uname) = Linux; then

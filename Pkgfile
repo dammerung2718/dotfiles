@@ -1,66 +1,28 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
-tap "mongodb/brew"
+
+# env
+brew "chezmoi"
+brew "gh"
 
 # editor
-cask "font-iosevka-nerd-font"
-cask "sublime-merge"
-cask "sublime-text"
-cask "zed"
-pkg "neovim"
-pkg "tmux"
+cask "visual-studio-code"
 
 # languages
-dnf "golang"
 brew "go"
 brew "node"
 
-# package managers
-pkg "gh"
-
 # tools
 brew "fd"
-brew "gnu-sed"
-brew "tidy-html5"
-dnf "fd-find"
-dnf "zsh"
-pkg "chezmoi"
-pkg "cmake"
-pkg "entr"
-pkg "fzf"
-pkg "jq"
-pkg "moreutils"
-pkg "pandoc"
-pkg "ripgrep"
-pkg "tree"
-pkg "unar"
-pkg "wget"
+brew "fzf"
+brew "jq"
 
-# libraries
-brew "glfw"
-brew "pkg-config"
-
-# db
-brew "mongodb-community@7.0"
-pkg "redis"
+# services
+brew "redis"
 
 # apps
-cask "ableton-live-suite"
 cask "arc"
-cask "discord"
-cask "iterm2"
-cask "mongodb-compass"
-cask "mos"
 cask "openvpn-connect"
-cask "postico"
 cask "postman"
 cask "spotify"
 cask "telegram"
-
-# windows
-win "Git.Git"
-win "GoLang.Go"
-win "RustLang.Rustup"
-win "LLVM.LLVM"
-win "Microsoft.VisualStudioCode"

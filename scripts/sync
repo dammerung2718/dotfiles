@@ -1,11 +1,6 @@
 #!/bin/sh
 set -e
 
-# install package manager
-if test $(uname) = Darwin && test -z $(which brew); then
-	NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
-
 # install programs
 OS=$(uname) scripts/generate
 if test $(uname) = Darwin; then
@@ -23,7 +18,7 @@ test ! -d $HOME/.cargo &&
 . $HOME/.cargo/env
 rustup component add rust-analyzer
 cargo install cargo-binstall
-cargo binstall bacon cargo-watch
+cargo binstall cargo-llvm-cov
 
 # go
 go install github.com/boyter/scc/v3@latest
@@ -34,12 +29,11 @@ test $SHELL != $(which zsh) && chsh -s $(which zsh)
 test ! -d $HOME/.oh-my-zsh &&
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
-rm -f $HOME/.zshrc $HOME/.zshrc.pre-oh-my-zsh
-
 # services
-if test $(uname) = Darwin; then
-	brew services start mongodb-community@7.0
-fi
+brew services start redis
+
+# delete zshrc if it changed
+[ -f $HOME/.zshrc.pre-oh-my-zsh ] && rm -f $HOME/.zshrc $HOME/.zshrc.pre-oh-my-zsh
 
 # symlinks
 chezmoi apply
