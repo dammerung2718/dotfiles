@@ -1,0 +1,39 @@
+#!/bin/sh
+set -e # fail on error
+
+
+# name ZIP file
+#################################################################################
+ZIP="backup-$(date +%d-%m-%Y).zip"
+echo $ZIP
+
+
+# cleanup build artifacts
+#################################################################################
+
+# Cargo projects
+CARGO_TOML_FILES=$(find $HOME/personal $HOME/work -type f -iname Cargo.toml)
+for file in $CARGO_TOML_FILES; do
+	project=$(dirname $file)
+	cd $project
+	cargo clean
+	cd -
+done
+
+
+# ZIP directories
+#################################################################################
+zip -r $ZIP $HOME/personal
+zip -r $ZIP $HOME/work
+
+
+# Upload to iCloud
+#################################################################################
+BACKUP_DIR="/Users/hei/Library/Mobile Documents/com~apple~CloudDocs/Backups"
+mkdir -p "$BACKUP_DIR"
+mv $ZIP "$BACKUP_DIR"
+
+
+# Done
+#################################################################################
+ls -lh "$BACKUP_DIR/$ZIP" | awk '{split($0,a," "); print a[5]}'

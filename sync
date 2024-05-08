@@ -1,0 +1,85 @@
+#!/bin/sh
+set -e # fail on error
+
+
+# Configuration
+#################################################################################
+
+# Common directories
+PERSONAL=$HOME/personal
+WORK=$HOME/work
+BIN=$HOME/.bin
+
+# Tool versions
+GO_VERSION=1.22.3
+RUST_TOOLCHAIN=nightly
+
+
+# Common functions
+#################################################################################
+info() {
+	echo " > $1"
+}
+
+
+# Create common directories
+#################################################################################
+mkdir -p $PERSONAL $WORK $BIN
+
+
+# Golang
+# NOTE: We need to get binaries directly.
+#       Because Go compiler is self-hosted.
+#################################################################################
+if ! command -v go >/dev/null; then
+
+	# download
+	GO_TARBALL="go$GO_VERSION.darwin-arm64.tar.gz"
+	if test ! -f $GO_TARBALL; then
+		info "Downloading Go"
+		curl -LO "https://go.dev/dl/$GO_TARBALL"
+	fi
+
+	# install
+	tar -xvf $GO_TARBALL
+	sudo mv go /usr/local/go
+
+	# check
+	go version >/dev/null
+	info "Installed Go"
+
+	# clenaup
+	rm $GO_TARBALL
+
+fi
+
+
+# Rust
+# NOTE: We need to get binaries directly.
+#       Because Rust compiler is self-hosted.
+#################################################################################
+export PATH="$PATH:$HOME/.cargo/bin"
+if ! command -v cargo >/dev/null; then
+
+	# installer (unattended)
+	if test ! -d $HOME/.cargo; then
+		info "Downloading Rust"
+		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
+		| sh -s -- -y --no-modify-path --default-toolchain $RUST_TOOLCHAIN
+	fi
+
+	# check
+	cargo --version >/dev/null
+	info "Installed Rust"
+
+fi
+
+
+# Symlink dotfiles
+#################################################################################
+ln -sf $(pwd)/dot_shrc $HOME/.zshrc
+
+
+# Done
+#################################################################################
+info "Done"
