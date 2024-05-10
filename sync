@@ -31,6 +31,7 @@ mkdir -p $PERSONAL $WORK $BIN
 # NOTE: We need to get binaries directly.
 #       Because Go compiler is self-hosted.
 #################################################################################
+export PATH="$PATH:/usr/local/go/bin"
 if ! command -v go >/dev/null; then
 
 	# download
@@ -73,6 +74,13 @@ if ! command -v cargo >/dev/null; then
 	info "Installed Rust"
 
 fi
+
+info "Installing cargo packages"
+cargo install cargo-binstall
+cargo binstall -y   \
+	cargo-watch \
+	bacon
+info "Installed cargo packages"
 
 
 # Symlink dotfiles
