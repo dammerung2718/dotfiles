@@ -83,6 +83,29 @@ cargo binstall -y   \
 info "Installed cargo packages"
 
 
+# Redis
+#################################################################################
+if ! command -v redis-server >/dev/null; then
+
+	# source code
+	info "Installing redis"
+	test ! -f redis-stable.tar.gz && curl -LO https://download.redis.io/redis-stable.tar.gz
+
+	tar -xzvf redis-stable.tar.gz
+	cd redis-stable
+	sudo make install
+
+	# check
+	redis-server --version
+	info "Installed redis"
+
+	# cleanup
+	rm redis-stable.tar.gz
+	rm -rf redis-stable
+
+fi
+
+
 # Symlink dotfiles
 #################################################################################
 ln -sf $(pwd)/dot_shrc $HOME/.zshrc
