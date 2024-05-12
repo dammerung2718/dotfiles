@@ -5,6 +5,9 @@ set -e # fail on error
 # Configuration
 #################################################################################
 
+# OS
+OS=$(uname)
+
 # Common directories
 PERSONAL=$HOME/personal
 WORK=$HOME/work
@@ -27,6 +30,13 @@ info() {
 mkdir -p $PERSONAL $WORK $BIN
 
 
+# Common utils
+#################################################################################
+if ! command -v cc >/dev/null; then
+	test $OS = Linux && sudo apt install -y build-essential
+fi
+
+
 # Golang
 # NOTE: We need to get binaries directly.
 #       Because Go compiler is self-hosted.
@@ -35,7 +45,14 @@ export PATH="$PATH:/usr/local/go/bin"
 if ! command -v go >/dev/null; then
 
 	# download
-	GO_TARBALL="go$GO_VERSION.darwin-arm64.tar.gz"
+	case $OS in
+		Darwin)
+			GO_TARBALL="go$GO_VERSION.darwin-arm64.tar.gz"
+			;;
+		Linux)
+			GO_TARBALL="go$GO_VERSION.linux-amd64.tar.gz"
+			;;
+	esac
 	if test ! -f $GO_TARBALL; then
 		info "Downloading Go"
 		curl -LO "https://go.dev/dl/$GO_TARBALL"
@@ -94,6 +111,7 @@ if ! command -v redis-server >/dev/null; then
 	tar -xzvf redis-stable.tar.gz
 	cd redis-stable
 	sudo make install
+	cd -
 
 	# check
 	redis-server --version
@@ -109,6 +127,7 @@ fi
 # Symlink dotfiles
 #################################################################################
 ln -sf $(pwd)/dot_shrc $HOME/.zshrc
+ln -sf $(pwd)/dot_shrc $HOME/.bashrc
 
 
 # Done
