@@ -1,0 +1,10 @@
+" don't ask to write modified buffers
+set hidden
+
+" highlighting
+filetype off
+syntax off
+
+" line numbers
+set number
+set relativenumber

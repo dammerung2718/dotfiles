@@ -182,8 +182,9 @@ fi
 
 # Symlink dotfiles
 #################################################################################
-ln -sf $(pwd)/dot_shrc $HOME/.zshrc
-ln -sf $(pwd)/dot_shrc $HOME/.bashrc
+ln -sf $(pwd)/dot_shrc  $HOME/.zshrc
+ln -sf $(pwd)/dot_shrc  $HOME/.bashrc
+ln -sf $(pwd)/dot_vimrc $HOME/.vimrc
 
 
 # Done
