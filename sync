@@ -35,6 +35,8 @@ export PATH="$PATH:$BIN"
 
 # Common utils
 #################################################################################
+
+# C compiler & make
 if ! command -v cc >/dev/null; then
 	test $OS = Linux && sudo apt install -y build-essential
 fi
@@ -123,7 +125,8 @@ info "Installing cargo packages"
 cargo install cargo-binstall
 cargo binstall -y   \
 	cargo-watch \
-	bacon
+	bacon       \
+	fd-find
 info "Installed cargo packages"
 
 
