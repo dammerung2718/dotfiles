@@ -12,11 +12,20 @@ echo $ZIP
 #################################################################################
 
 # Cargo projects
-CARGO_TOML_FILES=$(find $HOME/personal $HOME/work -type f -iname Cargo.toml)
-for file in $CARGO_TOML_FILES; do
+CARGO_PROJECTS=$(find $HOME/personal $HOME/work -type f -iname Cargo.toml)
+for file in $CARGO_PROJECTS; do
 	project=$(dirname $file)
 	cd $project
 	cargo clean
+	cd -
+done
+
+# NPM projects
+NODE_PROJECTS=$(find $HOME/personal $HOME/work -type f -iname package.json)
+for file in $NODE_PROJECTS; do
+	project=$(dirname $file)
+	cd $project
+	rm -rf node_modules
 	cd -
 done
 
