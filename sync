@@ -203,6 +203,28 @@ if ! command -v entr >/dev/null; then
 fi
 
 
+# wrk
+#################################################################################
+if ! command -v wrk >/dev/null; then
+
+	# source code
+	if test ! -d $SRC/wrk; then
+		info "Cloning wrk"
+		git clone --depth=1 https://github.com/wg/wrk $SRC/wrk
+	fi
+
+	# build
+	cd $SRC/wrk
+	make
+	cp $SRC/wrk/wrk $BIN
+	cd -
+
+	# check
+	wrk --version >/dev/null
+
+fi
+
+
 # Symlink dotfiles
 #################################################################################
 ln -sf $(pwd)/dot_shrc  $HOME/.zshrc
