@@ -180,6 +180,28 @@ if ! command -v redis-server >/dev/null; then
 fi
 
 
+# entr
+#################################################################################
+if ! command -v entr >/dev/null; then
+
+	# source code
+	if test ! -d $SRC/entr; then
+		info "Cloning entr"
+		git clone --depth=1 https://github.com/eradman/entr $SRC/entr
+	fi
+
+	# build
+	cd $SRC/entr
+	./configure
+	sudo make install
+	cd -
+
+	# check
+	which entr >/dev/null
+
+fi
+
+
 # Symlink dotfiles
 #################################################################################
 ln -sf $(pwd)/dot_shrc  $HOME/.zshrc
