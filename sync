@@ -126,7 +126,8 @@ cargo install cargo-binstall
 cargo binstall -y   \
 	cargo-watch \
 	bacon       \
-	fd-find
+	fd-find     \
+	hyperfine
 info "Installed cargo packages"
 
 
