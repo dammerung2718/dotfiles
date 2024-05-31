@@ -225,6 +225,14 @@ if ! command -v wrk >/dev/null; then
 fi
 
 
+# httpie
+#################################################################################
+if ! command -v http >/dev/null; then
+	python3 -m pip install --upgrade pip wheel
+	python3 -m pip install httpie
+fi
+
+
 # Symlink dotfiles
 #################################################################################
 ln -sf $(pwd)/dot_shrc  $HOME/.zshrc
