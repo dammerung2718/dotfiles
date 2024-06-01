@@ -90,6 +90,7 @@ if ! command -v go >/dev/null; then
 	# install
 	tar -xvf $GO_TARBALL
 	sudo mv go /usr/local/go
+	sudo chown -R $(whoami) /usr/local/go
 
 	# check
 	go version >/dev/null
