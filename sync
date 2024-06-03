@@ -12,6 +12,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle --cleanup
 
 
+# Rust
+#################################################################################
+if test ! -d $HOME/.cargo; then
+	curl https://sh.rustup.rs -sSf | sh -s -- -y
+fi
+
+
 # Dotfiles
 #################################################################################
 ln -sf $(pwd)/dot_shrc    $HOME/.zshrc
