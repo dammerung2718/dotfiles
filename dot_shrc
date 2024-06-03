@@ -7,5 +7,8 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:$(python3 -m site --user-base)/bin"
 
+# Brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Prompt
 PS1='%1~: '
