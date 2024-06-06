@@ -8,6 +8,7 @@ cask "notion-calendar"
 cask "visual-studio-code"
 cask "docker"
 brew "go"
+brew "node"
 
 # apps
 cask "arc"
