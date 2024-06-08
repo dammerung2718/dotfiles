@@ -7,6 +7,7 @@ cask "notion-calendar"
 # dev
 brew "go"
 brew "node"
+brew "qbe"
 cask "docker"
 cask "visual-studio-code"
 
