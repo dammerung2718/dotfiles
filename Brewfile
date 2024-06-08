@@ -5,12 +5,13 @@ cask "notion"
 cask "notion-calendar"
 
 # dev
-cask "visual-studio-code"
-cask "docker"
 brew "go"
 brew "node"
+cask "docker"
+cask "visual-studio-code"
 
 # apps
+cask "ableton-live-suite"
 cask "arc"
 cask "bruno"
 cask "chatgpt"
