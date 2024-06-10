@@ -9,6 +9,7 @@ brew "go"
 brew "node"
 brew "qbe"
 cask "docker"
+cask "font-jetbrains-mono"
 cask "visual-studio-code"
 
 # apps
