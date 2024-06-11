@@ -1,9 +1,5 @@
 tap "homebrew/bundle"
 
-# life
-cask "notion"
-cask "notion-calendar"
-
 # dev
 brew "go"
 brew "node"
