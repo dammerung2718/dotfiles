@@ -11,6 +11,7 @@ brew "node"
 # cli
 brew "clang-format"
 brew "ffmpeg"
+brew "gh"
 brew "imagemagick"
 brew "pkg-config"
 
