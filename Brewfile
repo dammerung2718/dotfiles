@@ -1,18 +1,25 @@
 tap "homebrew/bundle"
 
-# dev
-brew "go"
-brew "node"
-brew "qbe"
-cask "docker"
+# code
 cask "font-jetbrains-mono"
 cask "visual-studio-code"
+
+# lang
+brew "go"
+brew "node"
+
+# cli
+brew "clang-format"
+brew "imagemagick"
+brew "pkg-config"
+brew "raylib"
 
 # apps
 cask "ableton-live-suite"
 cask "arc"
 cask "bruno"
 cask "chatgpt"
+cask "docker"
 cask "mongodb-compass"
 cask "openvpn-connect"
 cask "telegram"
