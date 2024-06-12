@@ -10,8 +10,11 @@ brew "node"
 
 # cli
 brew "clang-format"
+brew "ffmpeg"
 brew "imagemagick"
 brew "pkg-config"
+
+# libs
 brew "raylib"
 
 # apps
