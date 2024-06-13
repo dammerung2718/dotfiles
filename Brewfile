@@ -13,6 +13,7 @@ brew "clang-format"
 brew "ffmpeg"
 brew "gh"
 brew "imagemagick"
+brew "jq"
 brew "pkg-config"
 
 # libs
