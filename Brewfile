@@ -1,7 +1,9 @@
 tap "homebrew/bundle"
 
 # code
-cask "font-jetbrains-mono"
+brew "neovim"
+cask "font-jetbrains-mono-nerd-font"
+cask "iterm2"
 cask "visual-studio-code"
 
 # lang
@@ -10,11 +12,15 @@ brew "node"
 
 # cli
 brew "clang-format"
+brew "fd"
 brew "ffmpeg"
 brew "gh"
 brew "imagemagick"
 brew "jq"
+brew "lazygit"
 brew "pkg-config"
+brew "ripgrep"
+brew "wget"
 
 # libs
 brew "raylib"

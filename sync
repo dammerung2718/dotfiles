@@ -21,6 +21,13 @@ fi
 
 # Dotfiles
 #################################################################################
-ln -sf $(pwd)/dot_shrc    $HOME/.zshrc
-ln -sf $(pwd)/dot_shrc    $HOME/.bashrc
-ln -sf $(pwd)/dot_vimrc   $HOME/.vimrc
+symlnk() {
+	test ! -e $2 && ln -sf $1 $2
+}
+
+mkdir -p $HOME/.config
+
+symlnk $(pwd)/dot_shrc        $HOME/.zshrc
+symlnk $(pwd)/dot_shrc        $HOME/.bashrc
+symlnk $(pwd)/dot_vimrc       $HOME/.vimrc
+symlnk $(pwd)/dot_config/nvim $HOME/.config/nvim
