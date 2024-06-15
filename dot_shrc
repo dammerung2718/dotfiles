@@ -17,3 +17,6 @@ PS1='%1~: '
 
 # Aliases
 alias vi=nvim
+
+# fzf
+eval "$(fzf --zsh)"
