@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "f91ee54fa0d038265e46ee798bbc5ae446448385"
+        "revision": "450cf7f8dc759556dc25424cb369a0e732067755"
       }
     },
     "cask": {
@@ -19,7 +19,7 @@
         }
       },
       "visual-studio-code": {
-        "version": "1.90.1",
+        "version": "1.90.2",
         "options": {
           "full_name": "visual-studio-code"
         }
@@ -43,7 +43,7 @@
         }
       },
       "chatgpt": {
-        "version": "1.2024.157,1718053765",
+        "version": "1.2024.163,1718653947",
         "options": {
           "full_name": "chatgpt"
         }
@@ -85,7 +85,7 @@
         }
       },
       "discord": {
-        "version": "0.0.307",
+        "version": "0.0.308",
         "options": {
           "full_name": "discord"
         }
@@ -858,7 +858,7 @@
         "macOS": "14.5"
       },
       "sequoia": {
-        "HOMEBREW_VERSION": "4.3.5",
+        "HOMEBREW_VERSION": "4.3.6",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "16.0.0.0.1.1717710328",
