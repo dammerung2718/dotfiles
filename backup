@@ -1,12 +1,10 @@
 #!/bin/sh
 set -e # fail on error
 
-
 # name ZIP file
 #################################################################################
 ZIP="backup-$(date +%d-%m-%Y).zip"
 echo $ZIP
-
 
 # cleanup build artifacts
 #################################################################################
@@ -15,6 +13,7 @@ echo $ZIP
 CARGO_PROJECTS=$(find $HOME/personal $HOME/work -type f -iname Cargo.toml)
 for file in $CARGO_PROJECTS; do
 	project=$(dirname $file)
+	echo "Found Cargo Project $project"
 	cd $project
 	cargo clean
 	cd -
@@ -24,24 +23,32 @@ done
 NODE_PROJECTS=$(find $HOME/personal $HOME/work -type f -iname package.json)
 for file in $NODE_PROJECTS; do
 	project=$(dirname $file)
+	echo "Found Node Project $project"
 	cd $project
-	rm -rf node_modules
+	rm -rf node_modules .next
 	cd -
 done
 
+# C projetcs
+C_PROJECTS=$(find $HOME/personal $HOME/work -type f -iname Makefile)
+for file in $C_PROJECTS; do
+	project=$(dirname $file)
+	echo "Found C Project $project"
+	cd $project
+	make clean
+	cd -
+done
 
 # ZIP directories
 #################################################################################
 zip -r $ZIP $HOME/personal
 zip -r $ZIP $HOME/work
 
-
 # Upload to iCloud
 #################################################################################
 BACKUP_DIR="/Users/hei/Library/Mobile Documents/com~apple~CloudDocs/Backups"
 mkdir -p "$BACKUP_DIR"
 mv $ZIP "$BACKUP_DIR"
-
 
 # Done
 #################################################################################
