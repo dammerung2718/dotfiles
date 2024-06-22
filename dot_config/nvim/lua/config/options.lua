@@ -4,3 +4,6 @@
 
 -- disable conceal
 vim.opt.conceallevel = 0
+
+-- set a ruler to 80 characters
+vim.opt.colorcolumn = "80"
