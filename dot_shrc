@@ -7,16 +7,24 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$(python3 -m site --user-base)/bin"
 
 # Brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if test $(uname) = Darwin; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 
 # Rust
 . "$HOME/.cargo/env"
 
 # Prompt
-PS1='%1~: '
+PS1='\w: '
 
 # Aliases
 alias vi=nvim
 
 # fzf
-eval "$(fzf --zsh)"
+if test $(uname) = Darwin; then
+	eval "$(fzf --zsh)"
+else
+	eval "$(fzf --bash)"
+fi

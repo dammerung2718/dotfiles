@@ -1,14 +1,21 @@
 #!/bin/sh
 set -e # fail on error
 
+# Config
+################################################################################
+BREW_PATH=/opt/homebrew
+if test $(uname) = Linux; then
+	BREW_PATH=/home/linuxbrew/.linuxbrew
+fi
+
 
 # Brew
 ################################################################################
-if test ! -d /opt/homebrew; then
+if test ! -d $BREW_PATH; then
 	NONINTERACTIVE=1 /bin/bash -c \
 		"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$($BREW_PATH/bin/brew shellenv)"
 brew bundle --cleanup
 
 
