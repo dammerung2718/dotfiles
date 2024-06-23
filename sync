@@ -39,3 +39,4 @@ symlnk $(pwd)/dot_shrc        $HOME/.bashrc
 symlnk $(pwd)/dot_vimrc       $HOME/.vimrc
 symlnk $(pwd)/dot_config/nvim $HOME/.config/nvim
 symlnk $(pwd)/dot_config/tmux $HOME/.config/tmux
+symlnk $(pwd)/dot_bin         $HOME/.bin
