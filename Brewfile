@@ -21,6 +21,7 @@ brew "jq"
 brew "lazygit"
 brew "pkg-config"
 brew "ripgrep"
+brew "tmux"
 brew "wget"
 
 # libs
