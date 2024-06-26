@@ -47,7 +47,7 @@ require("lazy").setup({
 				ensure_installed = 'all',
 				sync_install = false,
 				highlight = { enable = true },
-				indent = { enable = true },  
+				indent = { enable = false },
 			})
 		end,
 	},
@@ -163,6 +163,12 @@ require("lazy").setup({
 
 	{
 		'numToStr/Comment.nvim',
+		lazy = false,
+		opts = {},
+	},
+
+	{
+		'nmac427/guess-indent.nvim',
 		lazy = false,
 		opts = {},
 	},
