@@ -1,5 +1,5 @@
 # Env
-export EDITOR=nvim
+export EDITOR=vi
 
 # Path
 export PATH="$PATH:$HOME/.bin"
@@ -22,9 +22,6 @@ if test $(uname) = Darwin; then
 else
 	PS1='\w: '
 fi
-
-# Aliases
-alias vi=nvim
 
 # fzf
 if test $(uname) = Darwin; then

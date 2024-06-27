@@ -1,9 +1,7 @@
 tap "homebrew/bundle"
 
 # code
-brew "neovim"
 cask "font-jetbrains-mono-nerd-font"
-cask "iterm2"
 cask "visual-studio-code"
 
 # lang
@@ -28,13 +26,9 @@ brew "wget"
 brew "raylib"
 
 # apps
-cask "ableton-live-suite"
-cask "arc"
 cask "bruno"
 cask "chatgpt"
-cask "discord"
 cask "docker"
 cask "mongodb-compass"
 cask "openvpn-connect"
 cask "spotify"
-cask "telegram"
