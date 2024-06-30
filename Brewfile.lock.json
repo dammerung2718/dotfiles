@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "homebrew/bundle": {
-        "revision": "f0aa10ce605d1400fdb0cbe490e012238ef93b0c"
+        "revision": "5372559758cc6fb81024349431b6baad7ffd1bda"
       }
     },
     "cask": {
@@ -61,13 +61,13 @@
         }
       },
       "mongodb-compass": {
-        "version": "1.43.1",
+        "version": "1.43.3",
         "options": {
           "full_name": "mongodb-compass"
         }
       },
       "ableton-live-suite": {
-        "version": "12.0.5",
+        "version": "12.0.10",
         "options": {
           "full_name": "ableton-live-suite"
         }

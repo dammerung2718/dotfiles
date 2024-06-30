@@ -26,6 +26,7 @@ brew "wget"
 brew "raylib"
 
 # apps
+cask "ableton-live-suite"
 cask "bruno"
 cask "chatgpt"
 cask "docker"
