@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Stop on error
+set -e
+
+# Install shit
+brew bundle
+
+# Symlink dotfiles
+ln -sf $(pwd)/dot_shrc $HOME/.zshrc
