@@ -1,3 +1,9 @@
+# tap shit so I can use brew
+tap "dotenvx/brew"
+tap "homebrew/services"
+tap "mongodb/brew"
+
+
 # true color supported terminal
 cask "iterm2"
 
@@ -8,6 +14,7 @@ brew "fd"
 brew "entr"
 
 # I'll delete these once im rich
+cask "bruno"
 cask "openvpn-connect"
 cask "telegram"
 
@@ -30,3 +37,11 @@ cask "chatgpt"
 
 # Life without this is unbearable
 cask "spotify"
+
+# .env files are cool
+brew "dotenvx"
+
+# DATABASES UUHHMMPPHH
+brew "mongodb-community@7.0"
+cask "mongodb-compass"
+
