@@ -27,3 +27,6 @@ brew "rustup-init"
 # Thank God for OpenAI, now I don't have to
 # write my shitty code myself
 cask "chatgpt"
+
+# Life without this is unbearable
+cask "spotify"
