@@ -1,2 +1,11 @@
 # Package manager
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# I hate typing nvim everytime
+alias vi=nvim
+
+# And stupid prompts should just die
+PS1='%2~: '
+
+# Rust obviousoly
+. "$HOME/.cargo/env"

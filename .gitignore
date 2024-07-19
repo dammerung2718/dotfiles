@@ -1,1 +1,5 @@
 /Brewfile.lock.json
+
+/dot_config/dot_config
+/dot_config/github-copilot
+/dot_config/nvim/lazy-lock.json

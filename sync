@@ -1,10 +1,14 @@
 #!/bin/sh
-
-# Stop on error
-set -e
+set -e # Stop on error
 
 # Install shit
 brew bundle
 
+# I believe one day the Rust toolchain
+# will be superior to anything on the market.
+# Until then, FML
+test ! -d $HOME/.cargo && rustup-init -y
+
 # Symlink dotfiles
 ln -sf $(pwd)/dot_shrc $HOME/.zshrc
+ln -sf $(pwd)/dot_config $HOME/.config
