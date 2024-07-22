@@ -45,3 +45,11 @@ brew "dotenvx"
 brew "mongodb-community@7.0"
 cask "mongodb-compass"
 
+# I need diagrams sometimes
+brew "d2"
+
+# probably the most sane version control
+brew "lazygit"
+
+# I need to somehow organize my life, so here it goes
+cask "obsidian"

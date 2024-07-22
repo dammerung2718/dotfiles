@@ -7,4 +7,15 @@ return {
       colorscheme = "midnight",
     },
   },
+
+  -- Disable inlay hints cuz they suck
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      inlay_hints = {
+        enabled = true,
+        exclude = { "rust" },
+      },
+    },
+  },
 }
