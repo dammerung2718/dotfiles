@@ -3,7 +3,6 @@ tap "dotenvx/brew"
 tap "homebrew/services"
 tap "mongodb/brew"
 
-
 # true color supported terminal
 cask "iterm2"
 
@@ -15,6 +14,7 @@ brew "entr"
 
 # I'll delete these once im rich
 cask "bruno"
+cask "postman"
 cask "openvpn-connect"
 cask "telegram"
 
@@ -53,3 +53,7 @@ brew "lazygit"
 
 # I need to somehow organize my life, so here it goes
 cask "obsidian"
+
+# I use this just to install and keep GoLand up to date.
+# The only sane IDE in existence.
+cask "jetbrains-toolbox"
