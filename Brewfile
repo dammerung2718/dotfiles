@@ -1,59 +1,43 @@
 # tap shit so I can use brew
-tap "dotenvx/brew"
 tap "homebrew/services"
 tap "mongodb/brew"
 
-# true color supported terminal
-cask "iterm2"
+# Dev related.
+################################################################################
+cask "iterm2"                     # True color supported terminal.
 
-# nice code editor cuz i don't give f**k anymore
-brew "neovim"
+brew "neovim"                     # The only true way of editing text.
 brew "ripgrep"
 brew "fd"
 brew "entr"
+brew "lazygit"
+brew "wget"
 
-# I'll delete these once im rich
-cask "bruno"
-cask "postman"
-cask "openvpn-connect"
-cask "telegram"
+cask "font-victor-mono-nerd-font" # I hate this font but it at least doesn't
+                                  # hurt my eyes.
 
-# A good enough browser for now
-cask "arc"
+cask "openvpn-connect"            # I'll delete this once im rich
 
-# I hate this font but it at least doesn't hurt my eyes
-cask "font-victor-mono-nerd-font"
+brew "go"                         # I wish one day for all of these to
+brew "node"                       # just cease to exist and I can finally
+brew "rustup"                     # write undocumented and unusable C code.
 
-# I wish one day for all of these to
-# just cease to exist and I can finally
-# write undocumented and unusable C code.
-brew "go"
-brew "node"
-brew "rustup-init"
-
-# Thank God for OpenAI, now I don't have to
-# write my shitty code myself
-cask "chatgpt"
-
-# Life without this is unbearable
-cask "spotify"
-
-# .env files are cool
-brew "dotenvx"
-
-# DATABASES UUHHMMPPHH
-brew "mongodb-community@7.0"
+brew "mongodb-community@7.0"      # DATABASES UUHHMMPPHH
 cask "mongodb-compass"
 
-# I need diagrams sometimes
-brew "d2"
 
-# probably the most sane version control
-brew "lazygit"
+# Everyday
+################################################################################
+cask "arc"               # A good enough browser for now.
 
-# I need to somehow organize my life, so here it goes
-cask "obsidian"
+cask "chatgpt"           # Thank God for OpenAI, now I don't have to write my
+                         # shitty code myself.
 
-# I use this just to install and keep GoLand up to date.
-# The only sane IDE in existence.
-cask "jetbrains-toolbox"
+cask "spotify"           # Life without this is unbearable..
+
+brew "d2"                # I need diagrams sometimes.
+
+cask "obsidian"          # I need to somehow organize my life, so here it goes.
+
+cask "jetbrains-toolbox" # I use this just to install GoLand.
+                         # The only sane IDE in existence.
