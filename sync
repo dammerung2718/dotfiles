@@ -8,6 +8,8 @@ brew bundle
 # will be superior to anything on the market.
 # Until then, FML
 test ! -d $HOME/.cargo && rustup-init -y
+cargo install cargo-binstall
+cargo binstall cargo-outdated
 
 # Symlink dotfiles
 ln -sf $(pwd)/dot_shrc $HOME/.zshrc
