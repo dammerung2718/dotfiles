@@ -38,6 +38,3 @@ cask "spotify"           # Life without this is unbearable..
 brew "d2"                # I need diagrams sometimes.
 
 cask "obsidian"          # I need to somehow organize my life, so here it goes.
-
-cask "jetbrains-toolbox" # I use this just to install GoLand.
-                         # The only sane IDE in existence.
