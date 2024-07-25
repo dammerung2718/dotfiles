@@ -4,17 +4,9 @@ tap "mongodb/brew"
 
 # Dev related.
 ################################################################################
-cask "iterm2"                     # True color supported terminal.
+cask "visual-studio-code"         # I am old now
 
-brew "neovim"                     # The only true way of editing text.
-brew "ripgrep"
-brew "fd"
-brew "entr"
-brew "lazygit"
-brew "wget"
-
-cask "font-victor-mono-nerd-font" # I hate this font but it at least doesn't
-                                  # hurt my eyes.
+brew "pure"                       # Nice prompt
 
 cask "openvpn-connect"            # I'll delete this once im rich
 
@@ -22,9 +14,8 @@ brew "go"                         # I wish one day for all of these to
 brew "node"                       # just cease to exist and I can finally
 brew "rustup"                     # write undocumented and unusable C code.
 
-brew "mongodb-community@7.0"      # DATABASES UUHHMMPPHH
+brew "mongodb-community@7.0"      # I like this No-SQL database
 cask "mongodb-compass"
-
 
 # Everyday
 ################################################################################
