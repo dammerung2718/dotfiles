@@ -2,7 +2,7 @@
 set -e # Stop on error
 
 # Install shit
-brew bundle
+brew bundle --cleanup
 
 # I believe one day the Rust toolchain
 # will be superior to anything on the market.
