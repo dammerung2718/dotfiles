@@ -19,6 +19,8 @@ brew "rustup"              # write undocumented and unusable C code.
 cask "mongodb-compass"     # DB clients
 cask "tableplus"
 
+cask "docker"              # Containers are cool
+
 # Everyday
 ################################################################################
 cask "arc"      # A good enough browser for now.
