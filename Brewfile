@@ -10,6 +10,7 @@ cask "font-jetbrains-mono"
 brew "pure"                # Nice prompt
 
 cask "openvpn-connect"     # I'll delete this once im rich
+cask "postman"
 
 brew "go"                  # I wish one day for all of these to
 brew "node"                # just cease to exist and I can finally
