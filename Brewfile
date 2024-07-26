@@ -5,6 +5,7 @@ tap "mongodb/brew"
 # Dev related.
 ################################################################################
 cask "visual-studio-code" # I am old now
+cask "font-terminus"
 
 brew "pure"               # Nice prompt
 
