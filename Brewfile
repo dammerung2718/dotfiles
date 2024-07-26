@@ -4,28 +4,28 @@ tap "mongodb/brew"
 
 # Dev related.
 ################################################################################
-cask "visual-studio-code"         # I am old now
+cask "visual-studio-code" # I am old now
 
-brew "pure"                       # Nice prompt
+brew "pure"               # Nice prompt
 
-cask "openvpn-connect"            # I'll delete this once im rich
+cask "openvpn-connect"    # I'll delete this once im rich
 
-brew "go"                         # I wish one day for all of these to
-brew "node"                       # just cease to exist and I can finally
-brew "rustup"                     # write undocumented and unusable C code.
+brew "go"                 # I wish one day for all of these to
+brew "node"               # just cease to exist and I can finally
+brew "rustup"             # write undocumented and unusable C code.
 
-brew "mongodb-community@7.0"      # I like this No-SQL database
-cask "mongodb-compass"
+cask "mongodb-compass"    # DB clients
+cask "tableplus"
 
 # Everyday
 ################################################################################
-cask "arc"               # A good enough browser for now.
+cask "arc"      # A good enough browser for now.
 
-cask "chatgpt"           # Thank God for OpenAI, now I don't have to write my
-                         # shitty code myself.
+cask "chatgpt"  # Thank God for OpenAI, now I don't have to write my
+                # shitty code myself.
 
-cask "spotify"           # Life without this is unbearable..
+cask "spotify"  # Life without this is unbearable..
 
-brew "d2"                # I need diagrams sometimes.
+brew "d2"       # I need diagrams sometimes.
 
-cask "obsidian"          # I need to somehow organize my life, so here it goes.
+cask "obsidian" # I need to somehow organize my life, so here it goes.
