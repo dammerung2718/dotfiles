@@ -22,6 +22,8 @@ cask "tableplus"
 
 cask "docker"              # Containers are cool
 
+brew "redis"               # Services
+
 # Everyday
 ################################################################################
 cask "arc"      # A good enough browser for now.
