@@ -4,7 +4,7 @@ tap "mongodb/brew"
 
 # Dev related.
 ################################################################################
-cask "visual-studio-code"  # I am old now
+cask "zed"                 # I am old now
 cask "font-jetbrains-mono"
 
 brew "pure"                # Nice prompt
