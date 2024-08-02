@@ -9,8 +9,24 @@ brew bundle --cleanup
 # Until then, FML
 test ! -d $HOME/.cargo && rustup-init -y
 cargo install cargo-binstall
-cargo binstall cargo-outdated
+cargo binstall \
+    cargo-outdated \
+    starship
 
 # Symlink dotfiles
-ln -sf $(pwd)/dot_shrc $HOME/.zshrc
-ln -sf $(pwd)/dot_config $HOME/.config
+symlnk() {
+    if test -L $2
+    then
+        return
+    fi
+
+    if test -d $2
+    then
+        rm -rf $2
+    fi
+
+    ln -sf $1 $2
+}
+
+symlnk $(pwd)/dot_shrc $HOME/.zshrc
+symlnk $(pwd)/dot_config $HOME/.config

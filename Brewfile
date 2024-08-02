@@ -1,7 +1,3 @@
-# tap shit so I can use brew
-tap "homebrew/services"
-tap "mongodb/brew"
-
 # Dev related.
 ################################################################################
 cask "zed"                 # I am old now
@@ -20,10 +16,6 @@ brew "rustup"              # write undocumented and unusable C code.
 
 cask "mongodb-compass"     # DB clients
 cask "tableplus"
-
-cask "docker"              # Containers are cool
-
-brew "redis"               # Services
 
 brew "fd"                  # CLI tools
 
