@@ -13,6 +13,7 @@
     "dock": "right"
   },
   "preferred_line_length": 80,
+  "buffer_line_height": "standard",
 
   // lsp
   "format_on_save": "on",

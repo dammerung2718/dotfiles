@@ -1,16 +1,8 @@
 # brew
 /Brewfile.lock.json
 
-# nvim
-/dot_config/nvim/lazy-lock.json
-
-# zed
+# misc
 /dot_config/zed/prompts
 /dot_config/zed/embeddings
-
-# iterm
 /dot_config/iterm2
-
-# misc
-/dot_config/dot_config
 /dot_config/github-copilot

@@ -7,7 +7,7 @@ brew bundle --cleanup
 # I believe one day the Rust toolchain
 # will be superior to anything on the market.
 # Until then, FML
-test ! -d $HOME/.cargo && rustup-init -y
+test ! -d $HOME/.cargo && rustup -y
 cargo install cargo-binstall
 cargo binstall \
     cargo-outdated \
@@ -28,5 +28,5 @@ symlnk() {
     ln -sf $1 $2
 }
 
-symlnk $(pwd)/dot_shrc $HOME/.zshrc
+symlnk $(pwd)/dot_shrc   $HOME/.zshrc
 symlnk $(pwd)/dot_config $HOME/.config
