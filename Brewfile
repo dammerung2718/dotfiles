@@ -24,6 +24,8 @@ cask "docker"              # Containers are cool
 
 brew "redis"               # Services
 
+brew "fd"                  # CLI tools
+
 # Everyday
 ################################################################################
 cask "arc"      # A good enough browser for now.
