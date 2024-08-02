@@ -7,7 +7,7 @@ tap "mongodb/brew"
 cask "zed"                 # I am old now
 cask "font-jetbrains-mono"
 
-brew "pure"                # Nice prompt
+brew "starship"            # Nice prompt
 
 cask "openvpn-connect"     # I'll delete this once im rich
 cask "postman"
