@@ -1,19 +1,18 @@
 {
   // font
-  "ui_font_family": "JetBrains Mono",
-  "buffer_font_family": "JetBrains Mono",
+  "ui_font_family": "Fira Code",
+  "buffer_font_family": "Fira Code",
 
   // theme
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine Moon"
+    "dark": "Rosé Pine"
   },
   "terminal": {
     "dock": "right"
   },
   "preferred_line_length": 80,
-  "buffer_line_height": "standard",
 
   // lsp
   "format_on_save": "on",
