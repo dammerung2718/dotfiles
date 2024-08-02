@@ -7,7 +7,8 @@ tap "mongodb/brew"
 cask "zed"                 # I am old now
 cask "font-jetbrains-mono"
 
-brew "starship"            # Nice prompt
+cask "iterm2"              # Low latency terminal
+brew "starship"
 
 cask "openvpn-connect"     # I'll delete this once im rich
 cask "postman"
