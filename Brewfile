@@ -31,3 +31,5 @@ cask "spotify"  # Life without this is unbearable..
 brew "d2"       # I need diagrams sometimes.
 
 cask "obsidian" # I need to somehow organize my life, so here it goes.
+
+cask "discord"  # Socialising is important, I guess.
