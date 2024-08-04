@@ -18,6 +18,7 @@ cask "mongodb-compass" # DB clients
 cask "tableplus"
 
 brew "fd"              # CLI tools
+brew "entr"
 
 # Everyday
 ################################################################################
