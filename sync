@@ -9,7 +9,8 @@ brew bundle --cleanup
 # Until then, FML
 test ! -d $HOME/.cargo && rustup -y
 cargo install cargo-binstall
-cargo binstall \
+cargo binstall     \
+    cargo-watch    \
     cargo-outdated \
     starship
 
