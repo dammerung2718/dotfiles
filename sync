@@ -2,7 +2,7 @@
 set -e # Stop on error
 
 # Install shit
-brew bundle --cleanup
+brew bundle
 
 # I believe one day the Rust toolchain
 # will be superior to anything on the market.
@@ -13,6 +13,9 @@ cargo binstall     \
     cargo-watch    \
     cargo-outdated \
     starship
+
+# RE stuff, why do they all use python?
+pip3 install frida-tools
 
 # Symlink dotfiles
 symlnk() {
