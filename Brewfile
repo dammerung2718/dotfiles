@@ -1,3 +1,5 @@
+tap "homebrew/services"
+
 # Dev related.
 ################################################################################
 cask "android-studio"    # RE stuff
@@ -28,6 +30,8 @@ cask "tableplus"
 
 brew "fd"                # CLI tools
 brew "entr"
+
+brew "redis"             # Services
 
 # Everyday
 ################################################################################
