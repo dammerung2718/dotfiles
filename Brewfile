@@ -2,36 +2,37 @@ tap "homebrew/services"
 
 # Dev related.
 ################################################################################
-cask "android-studio"    # RE stuff
+cask "android-studio"     # RE stuff
 cask "mitmproxy"
 brew "apktool"
 brew "protobuf"
 brew "xz"
 brew "jadx"
 
-cask "zed"               # I am old now
+cask "zed"                # I am old now
+cask "visual-studio-code" 
 cask "jetbrains-toolbox"
 cask "font-fira-code"
 
-cask "iterm2"            # Low latency terminal
+cask "iterm2"             # Low latency terminal
 brew "starship"
 
-cask "openvpn-connect"   # I'll delete this once im rich
+cask "openvpn-connect"    # I'll delete this once im rich
 cask "postman"
 cask "bruno"
 cask "telegram"
 
-brew "go"                # I wish one day for all of these to
-brew "node"              # just cease to exist and I can finally
-brew "rustup"            # write undocumented and unusable C code.
+brew "go"                 # I wish one day for all of these to
+brew "node"               # just cease to exist and I can finally
+brew "rustup"             # write undocumented and unusable C code.
 
-cask "mongodb-compass"   # DB clients
+cask "mongodb-compass"    # DB clients
 cask "tableplus"
 
-brew "fd"                # CLI tools
+brew "fd"                 # CLI tools
 brew "entr"
 
-brew "redis"             # Services
+brew "redis"              # Services
 
 # Everyday
 ################################################################################
