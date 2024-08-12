@@ -8,13 +8,15 @@ brew "apktool"
 brew "protobuf"
 brew "xz"
 brew "jadx"
+brew "pipx"
 
 cask "zed"                # I am old now
 cask "visual-studio-code" 
 cask "jetbrains-toolbox"
+cask "font-terminus"
 cask "font-fira-code"
 
-cask "iterm2"             # Low latency terminal
+cask "alacritty"          # Low latency terminal
 brew "starship"
 
 cask "openvpn-connect"    # I'll delete this once im rich
@@ -25,6 +27,7 @@ cask "telegram"
 brew "go"                 # I wish one day for all of these to
 brew "node"               # just cease to exist and I can finally
 brew "rustup"             # write undocumented and unusable C code.
+brew "yarn"
 
 cask "mongodb-compass"    # DB clients
 cask "tableplus"

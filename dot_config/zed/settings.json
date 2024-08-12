@@ -13,6 +13,7 @@
     "dock": "right"
   },
   "preferred_line_length": 80,
+  "tab_size": 2,
 
   // lsp
   "format_on_save": "on",

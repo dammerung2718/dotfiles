@@ -2,7 +2,7 @@
 set -e # Stop on error
 
 # Install shit
-brew bundle
+brew bundle --cleanup
 
 # I believe one day the Rust toolchain
 # will be superior to anything on the market.
@@ -15,7 +15,7 @@ cargo binstall     \
     starship
 
 # RE stuff, why do they all use python?
-pip3 install frida-tools
+pipx install frida-tools
 
 # Symlink dotfiles
 symlnk() {
@@ -34,3 +34,4 @@ symlnk() {
 
 symlnk $(pwd)/dot_shrc   $HOME/.zshrc
 symlnk $(pwd)/dot_config $HOME/.config
+symlnk $(pwd)/dot_vimrc  $HOME/.vimrc
