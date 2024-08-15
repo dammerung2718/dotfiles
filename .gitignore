@@ -4,5 +4,6 @@
 # misc
 /dot_config/zed/prompts
 /dot_config/zed/embeddings
+/dot_config/zed/conversations
 /dot_config/iterm2
 /dot_config/github-copilot

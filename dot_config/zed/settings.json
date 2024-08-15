@@ -21,10 +21,19 @@
     "Go": {
       "tab_size": 8,
       "hard_tabs": true
+    },
+    "Shell Script": {
+      "tab_size": 8,
+      "hard_tabs": true
     }
   },
 
   // lsp
   "format_on_save": "on",
-  "ensure_final_newline_on_save": true
+  "ensure_final_newline_on_save": true,
+
+  // ai
+  "features": {
+    "inline_completion_provider": "supermaven"
+  }
 }

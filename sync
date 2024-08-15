@@ -9,27 +9,24 @@ brew bundle --cleanup
 # Until then, FML
 test ! -d $HOME/.cargo && rustup -y
 cargo install cargo-binstall
-cargo binstall     \
-    cargo-watch    \
-    cargo-outdated \
-    starship
-
-# RE stuff, why do they all use python?
-pipx install frida-tools
+cargo binstall       \
+      cargo-watch    \
+      cargo-outdated \
+      starship
 
 # Symlink dotfiles
 symlnk() {
-    if test -L $2
-    then
-        return
-    fi
+	if test -L $2
+	then
+		return
+	fi
 
-    if test -d $2
-    then
-        rm -rf $2
-    fi
+	if test -d $2
+	then
+		rm -rf $2
+	fi
 
-    ln -sf $1 $2
+	ln -sf $1 $2
 }
 
 symlnk $(pwd)/dot_shrc   $HOME/.zshrc
