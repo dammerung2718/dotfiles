@@ -12,7 +12,6 @@ brew "pipx"
 
 cask "zed"                # I am old now
 cask "visual-studio-code" 
-cask "jetbrains-toolbox"
 cask "font-terminus"
 cask "font-fira-code"
 
