@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# Environment
+export EDITOR=vi
+
 # Package manager
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
