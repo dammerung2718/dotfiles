@@ -3,7 +3,6 @@ tap "homebrew/services"
 # Dev related.
 ################################################################################
 cask "zed"                # I am old now
-cask "font-fira-code"
 
 cask "alacritty"          # Low latency terminal
 brew "starship"
