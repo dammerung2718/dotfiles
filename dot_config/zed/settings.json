@@ -1,8 +1,4 @@
 {
-  // font
-  "ui_font_family": "Fira Code",
-  "buffer_font_family": "Fira Code",
-
   // theme
   "theme": {
     "mode": "system",
@@ -25,6 +21,15 @@
     "Shell Script": {
       "tab_size": 8,
       "hard_tabs": true
+    },
+    "Python": {
+      "tab_size": 4
+    },
+    "C": {
+      "format_on_save": "off"
+    },
+    "C++": {
+      "format_on_save": "off"
     }
   },
 
