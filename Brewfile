@@ -22,6 +22,7 @@ brew "jj"                 # CLI tools
 brew "fd"
 brew "entr"
 brew "d2"
+brew "tree"
 
 brew "redis"              # Services
 
