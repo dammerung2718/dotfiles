@@ -2,7 +2,7 @@ tap "homebrew/services"
 
 # Dev related.
 ################################################################################
-cask "zed"                # I am old now
+cask "visual-studio-code" # I am old now
 
 cask "alacritty"          # Low latency terminal
 brew "starship"
