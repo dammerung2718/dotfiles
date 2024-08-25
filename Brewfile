@@ -9,6 +9,7 @@ brew "starship"
 
 cask "openvpn-connect"    # I'll delete this once im rich
 cask "bruno"
+cask "postman"
 cask "telegram"
 
 brew "go"                 # I wish one day for all of these to
@@ -21,13 +22,4 @@ cask "tableplus"
 brew "jj"                 # CLI tools
 brew "fd"
 brew "entr"
-brew "d2"
 brew "tree"
-
-brew "redis"              # Services
-
-# Everyday
-################################################################################
-cask "spotify"  # Life without this is unbearable..
-
-cask "obsidian" # I need to somehow organize my life, so here it goes.
