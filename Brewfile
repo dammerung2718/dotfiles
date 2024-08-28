@@ -4,8 +4,7 @@ tap "homebrew/services"
 ################################################################################
 cask "visual-studio-code" # I am old now
 
-cask "alacritty"          # Low latency terminal
-brew "starship"
+brew "starship"           # Nice prompt
 
 cask "openvpn-connect"    # I'll delete this once im rich
 cask "bruno"
