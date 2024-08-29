@@ -22,3 +22,7 @@ brew "jj"                 # CLI tools
 brew "fd"
 brew "entr"
 brew "tree"
+
+# Life
+################################################################################
+cask "mos"                # Mouse Scroll Util
