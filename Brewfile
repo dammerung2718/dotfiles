@@ -26,3 +26,5 @@ brew "tree"
 # Life
 ################################################################################
 cask "mos"                # Mouse Scroll Util
+
+cask "amethyst"           # Window manager
