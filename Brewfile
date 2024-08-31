@@ -15,6 +15,7 @@ brew "go"                 # I wish one day for all of these to
 brew "nvm"                # just cease to exist and I can finally
 brew "rustup"             # write undocumented and unusable C code.
 brew "elixir"
+brew "bazelisk"
 
 cask "mongodb-compass"    # DB clients
 cask "tableplus"
