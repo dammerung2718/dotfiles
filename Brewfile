@@ -4,6 +4,8 @@ tap "nikitabobko/tap"
 # Dev related.
 ################################################################################
 cask "visual-studio-code" # I am old now
+cask "wezterm"
+brew "neovim"
 
 brew "starship"           # Nice prompt
 
