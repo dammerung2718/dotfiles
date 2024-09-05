@@ -1,4 +1,5 @@
 tap "homebrew/services"
+tap "nikitabobko/tap"
 
 # Dev related.
 ################################################################################
@@ -28,6 +29,6 @@ brew "gh"
 
 # Life
 ################################################################################
-cask "mos"                # Mouse Scroll Util
+cask "mos"          # Mouse Scroll Util
 
-cask "amethyst"           # Window manager
+cask "aerospace"    # Window manager
