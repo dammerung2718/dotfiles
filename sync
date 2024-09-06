@@ -1,24 +1,17 @@
 #!/bin/sh
 set -e # Stop on error
 
-# Install shit
-brew bundle --cleanup
-
 # I believe one day the Rust toolchain
 # will be superior to anything on the market.
 # Until then, FML
-test ! -d $HOME/.cargo && rustup -y
-cargo install cargo-binstall
-cargo binstall       \
-      cargo-watch    \
-      cargo-outdated \
-      starship       \
-      mdbook
+test ! -d $HOME/.cargo && brew install rustup && rustup -y
+cargo install kur
+kur sync
 
 # Node stuff
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"                                       # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 nvm install --lts
 
 # Bazel
@@ -26,19 +19,17 @@ bazelisk
 
 # Symlink dotfiles
 symlnk() {
-	if test -L $2
-	then
-		return
-	fi
+  if test -L $2; then
+    return
+  fi
 
-	if test -d $2
-	then
-		rm -rf $2
-	fi
+  if test -d $2; then
+    rm -rf $2
+  fi
 
-	ln -sf $1 $2
+  ln -sf $1 $2
 }
 
-symlnk $(pwd)/dot_shrc   $HOME/.zshrc
+symlnk $(pwd)/dot_shrc $HOME/.zshrc
 symlnk $(pwd)/dot_config $HOME/.config
-symlnk $(pwd)/dot_vimrc  $HOME/.vimrc
+symlnk $(pwd)/dot_vimrc $HOME/.vimrc
