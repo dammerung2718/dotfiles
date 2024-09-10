@@ -14,7 +14,6 @@ pkg-config         #ubuntu
 aerospace             #brew
 bruno                 #brew
 elixir                #brew
-fd                    #brew
 go                    #brew
 mongodb-compass       #brew
 mos                   #brew
@@ -29,6 +28,7 @@ wezterm               #brew
 bob-nvim          #cargo
 cargo-outdated    #cargo
 cargo-watch       #cargo
+fd-find           #cargo
 jj-cli            #cargo
 mdbook            #cargo
 starship          #cargo
