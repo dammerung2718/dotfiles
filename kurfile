@@ -2,25 +2,26 @@
 entr       #brew #ubuntu
 gh         #brew #ubuntu
 ripgrep    #brew #ubuntu
+tree       #brew #ubuntu
 
 # Ubuntu Packages
 build-essential    #ubuntu
+cmake              #ubuntu
+libssl-dev         #ubuntu
+pkg-config         #ubuntu
 
 # Brew Packages
 aerospace             #brew
-bazelisk              #brew
 bruno                 #brew
 elixir                #brew
 fd                    #brew
 go                    #brew
-jj                    #brew
 mongodb-compass       #brew
 mos                   #brew
 openvpn-connect       #brew
 postman               #brew
 tableplus             #brew
 telegram              #brew
-tree                  #brew
 visual-studio-code    #brew
 wezterm               #brew
 
@@ -28,5 +29,6 @@ wezterm               #brew
 bob-nvim          #cargo
 cargo-outdated    #cargo
 cargo-watch       #cargo
+jj-cli            #cargo
 mdbook            #cargo
 starship          #cargo
