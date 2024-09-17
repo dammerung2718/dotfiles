@@ -7,6 +7,7 @@ tree       #brew #ubuntu
 # Ubuntu Packages
 build-essential    #ubuntu
 cmake              #ubuntu
+golang             #ubuntu
 libssl-dev         #ubuntu
 pkg-config         #ubuntu
 
