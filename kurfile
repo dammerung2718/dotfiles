@@ -1,8 +1,50 @@
 # Common Packages
 entr       #brew #ubuntu
 gh         #brew #ubuntu
+go         #alpine #brew
+neovim     #alpine #brew
 ripgrep    #brew #ubuntu
 tree       #brew #ubuntu
+
+# Alpine Packages
+alpine-base                 #alpine
+alpine-sdk                  #alpine
+blkid                       #alpine
+busybox-mdev-openrc         #alpine
+chrony                      #alpine
+cryptsetup                  #alpine
+curl                        #alpine
+dmenu                       #alpine
+doas                        #alpine
+doas-sudo-shim              #alpine
+docs                        #alpine
+dosfstools                  #alpine
+dwm                         #alpine
+e2fsprogs                   #alpine
+eudev                       #alpine
+firefox                     #alpine
+git                         #alpine
+git-doc                     #alpine
+github-cli                  #alpine
+grub-efi                    #alpine
+linux-firmware-amd          #alpine
+linux-firmware-nvidia       #alpine
+linux-firmware-other        #alpine
+linux-firmware-rtl_nic      #alpine
+linux-lts                   #alpine
+man-pages                   #alpine
+mandoc                      #alpine
+mesa-dri-gallium            #alpine
+openssh                     #alpine
+openssl                     #alpine
+setxkbmap                   #alpine
+st                          #alpine
+udev-init-scripts           #alpine
+udev-init-scripts-openrc    #alpine
+xf86-input-libinput         #alpine
+xinit                       #alpine
+xorg-server                 #alpine
+zsh                         #alpine
 
 # Ubuntu Packages
 build-essential    #ubuntu
@@ -15,7 +57,6 @@ pkg-config         #ubuntu
 aerospace             #brew
 bruno                 #brew
 elixir                #brew
-go                    #brew
 mongodb-compass       #brew
 mos                   #brew
 openvpn-connect       #brew
@@ -26,10 +67,8 @@ visual-studio-code    #brew
 wezterm               #brew
 
 # Cargo Packages
-bob-nvim          #cargo
 cargo-outdated    #cargo
 cargo-watch       #cargo
 fd-find           #cargo
-jj-cli            #cargo
 mdbook            #cargo
 starship          #cargo

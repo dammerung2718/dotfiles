@@ -1,25 +1,21 @@
 #!/bin/zsh
 
+# swap capslock with escape
+if test $(uname) = Linux && test ! -z "$DISPLAY"; then
+	setxkbmap -option caps:swapescape
+fi
+
 # Environment
+export COLORTERM=truecolor
 export EDITOR=vi
 
-# Package manager
-eval "$(/opt/homebrew/bin/brew shellenv)"
+# brew
+if test $(uname) = "Darwin"; then
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
-# Nice prompt
-eval "$(starship init zsh)"
-
-# Rust obviously
+# rust
 . "$HOME/.cargo/env"
 
-# Python Binaries
-export PATH="$PATH:$HOME/.local/bin"
-
-# Android SDK
-export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
-export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
-
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+# prompt
+eval "$(starship init zsh)"

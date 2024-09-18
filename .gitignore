@@ -1,6 +1,9 @@
 # brew
 /Brewfile.lock.json
 
+# src
+/src
+
 # misc
 /dot_config/zed/prompts
 /dot_config/zed/embeddings

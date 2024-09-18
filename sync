@@ -1,22 +1,20 @@
 #!/bin/sh
 set -e # Stop on error
 
-# nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash >/dev/null
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-nvm install node
-
-# bazel
-npm install -g @bazel/bazelisk
-
 # kur
-test ! -d $HOME/.cargo && brew install rustup && rustup -y
+if test ! -d $HOME/.cargo; then
+  curl -sSf https://sh.rustup.rs | sh -s -- -y
+fi
+. "$HOME/.cargo/env"
 rustup component add rust-analyzer
 command -v kur >/dev/null || cargo install kur
 kur fmt
 kur sync
+
+# xorg
+if test $(uname) = "Linux"; then
+  doas setup-xorg-base
+fi
 
 # symlinks
 symlnk() {
@@ -34,3 +32,4 @@ symlnk() {
 symlnk $(pwd)/dot_shrc $HOME/.zshrc
 symlnk $(pwd)/dot_config $HOME/.config
 symlnk $(pwd)/dot_vimrc $HOME/.vimrc
+symlnk $(pwd)/dot_xinitrc $HOME/.xinitrc
