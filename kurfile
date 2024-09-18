@@ -29,6 +29,7 @@ git-doc                     #alpine
 github-cli                  #alpine
 grub-efi                    #alpine
 gzip                        #alpine
+libressl-dev                #alpine
 linux-firmware-amd          #alpine
 linux-firmware-nvidia       #alpine
 linux-firmware-other        #alpine
@@ -42,6 +43,8 @@ openssh                     #alpine
 openssl                     #alpine
 python3                     #alpine
 setxkbmap                   #alpine
+slock                       #alpine
+sqlitebrowser               #alpine
 st                          #alpine
 udev-init-scripts           #alpine
 udev-init-scripts-openrc    #alpine
@@ -74,6 +77,7 @@ visual-studio-code    #brew
 wezterm               #brew
 
 # Cargo Packages
+bacon             #cargo
 cargo-outdated    #cargo
 cargo-watch       #cargo
 fd-find           #cargo
