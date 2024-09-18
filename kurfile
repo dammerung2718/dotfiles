@@ -1,14 +1,15 @@
 # Common Packages
-entr       #brew #ubuntu
+entr       #alpine #brew #ubuntu
 gh         #brew #ubuntu
 go         #alpine #brew
 neovim     #alpine #brew
-ripgrep    #brew #ubuntu
-tree       #brew #ubuntu
+ripgrep    #alpine #brew #ubuntu
+tree       #alpine #brew #ubuntu
 
 # Alpine Packages
 alpine-base                 #alpine
 alpine-sdk                  #alpine
+bash                        #alpine
 blkid                       #alpine
 busybox-mdev-openrc         #alpine
 chrony                      #alpine
@@ -27,6 +28,7 @@ git                         #alpine
 git-doc                     #alpine
 github-cli                  #alpine
 grub-efi                    #alpine
+gzip                        #alpine
 linux-firmware-amd          #alpine
 linux-firmware-nvidia       #alpine
 linux-firmware-other        #alpine
@@ -35,12 +37,17 @@ linux-lts                   #alpine
 man-pages                   #alpine
 mandoc                      #alpine
 mesa-dri-gallium            #alpine
+nodejs                      #alpine
 openssh                     #alpine
 openssl                     #alpine
+python3                     #alpine
 setxkbmap                   #alpine
 st                          #alpine
 udev-init-scripts           #alpine
 udev-init-scripts-openrc    #alpine
+unzip                       #alpine
+wget                        #alpine
+xclip                       #alpine
 xf86-input-libinput         #alpine
 xinit                       #alpine
 xorg-server                 #alpine
