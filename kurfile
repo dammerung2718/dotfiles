@@ -1,75 +1,26 @@
 # Common Packages
-entr       #alpine #brew #ubuntu
+entr       #brew #ubuntu
 gh         #brew #ubuntu
-go         #alpine #brew
-neovim     #alpine #brew
-ripgrep    #alpine #brew #ubuntu
-tree       #alpine #brew #ubuntu
-
-# Alpine Packages
-alpine-base                 #alpine
-alpine-sdk                  #alpine
-bash                        #alpine
-blkid                       #alpine
-busybox-mdev-openrc         #alpine
-chrony                      #alpine
-cryptsetup                  #alpine
-curl                        #alpine
-dmenu                       #alpine
-doas                        #alpine
-doas-sudo-shim              #alpine
-docs                        #alpine
-dosfstools                  #alpine
-dwm                         #alpine
-e2fsprogs                   #alpine
-eudev                       #alpine
-firefox                     #alpine
-git                         #alpine
-git-doc                     #alpine
-github-cli                  #alpine
-grub-efi                    #alpine
-gzip                        #alpine
-libressl-dev                #alpine
-linux-firmware-amd          #alpine
-linux-firmware-nvidia       #alpine
-linux-firmware-other        #alpine
-linux-firmware-rtl_nic      #alpine
-linux-lts                   #alpine
-man-pages                   #alpine
-mandoc                      #alpine
-mesa-dri-gallium            #alpine
-nodejs                      #alpine
-openssh                     #alpine
-openssl                     #alpine
-python3                     #alpine
-setxkbmap                   #alpine
-slock                       #alpine
-sqlitebrowser               #alpine
-st                          #alpine
-udev-init-scripts           #alpine
-udev-init-scripts-openrc    #alpine
-unzip                       #alpine
-wget                        #alpine
-xclip                       #alpine
-xf86-input-libinput         #alpine
-xinit                       #alpine
-xorg-server                 #alpine
-zsh                         #alpine
-zzz                         #alpine
+ripgrep    #brew #ubuntu
+tree       #brew #ubuntu
 
 # Ubuntu Packages
-build-essential    #ubuntu
-cmake              #ubuntu
-golang             #ubuntu
-libssl-dev         #ubuntu
-pkg-config         #ubuntu
+build-essential       #ubuntu
+cmake                 #ubuntu
+golang                #ubuntu
+libssl-dev            #ubuntu
+pkg-config            #ubuntu
+postgresql            #ubuntu
+postgresql-contrib    #ubuntu
 
 # Brew Packages
 aerospace             #brew
 bruno                 #brew
 elixir                #brew
+go                    #brew
 mongodb-compass       #brew
 mos                   #brew
+neovim                #brew
 openvpn-connect       #brew
 postman               #brew
 tableplus             #brew
@@ -84,5 +35,6 @@ cargo-outdated    #cargo
 cargo-watch       #cargo
 fd-find           #cargo
 mdbook            #cargo
+sqlx-cli          #cargo
 starship          #cargo
 zellij            #cargo
