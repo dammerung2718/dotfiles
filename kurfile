@@ -79,8 +79,10 @@ wezterm               #brew
 
 # Cargo Packages
 bacon             #cargo
+bob-nvim          #cargo
 cargo-outdated    #cargo
 cargo-watch       #cargo
 fd-find           #cargo
 mdbook            #cargo
 starship          #cargo
+zellij            #cargo

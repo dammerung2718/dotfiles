@@ -25,6 +25,7 @@ symlnk() {
 }
 
 symlnk $(pwd)/dot_shrc $HOME/.zshrc
+symlnk $(pwd)/dot_shrc $HOME/.bashrc
 symlnk $(pwd)/dot_config $HOME/.config
 symlnk $(pwd)/dot_vimrc $HOME/.vimrc
 symlnk $(pwd)/dot_xinitrc $HOME/.xinitrc

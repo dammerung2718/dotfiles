@@ -16,6 +16,11 @@ fi
 
 # rust
 . "$HOME/.cargo/env"
+export PATH="$PATH:$HOME/.local/share/bob/nvim-bin"
 
 # prompt
-eval "$(starship init zsh)"
+if test "$SHELL" = /bin/zsh; then
+	eval "$(starship init zsh)"
+else
+	eval "$(starship init bash)"
+fi
