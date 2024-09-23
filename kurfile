@@ -55,6 +55,7 @@ xf86-input-libinput         #alpine
 xinit                       #alpine
 xorg-server                 #alpine
 zsh                         #alpine
+zzz                         #alpine
 
 # Ubuntu Packages
 build-essential    #ubuntu
