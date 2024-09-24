@@ -1,6 +1,8 @@
 # Common Packages
+black      #brew #ubuntu
 entr       #brew #ubuntu
 gh         #brew #ubuntu
+pyright    #brew #ubuntu
 ripgrep    #brew #ubuntu
 tree       #brew #ubuntu
 

@@ -12,6 +12,7 @@ return {
 
     -- setup servers
     lspconfig.rust_analyzer.setup({})
+    lspconfig.pyright.setup({})
 
     -- setup keymaps
     local opts = { buffer = bufnr, noremap = true, silent = true }
