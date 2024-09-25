@@ -14,6 +14,7 @@ pkg-config            #ubuntu
 postgresql            #ubuntu
 postgresql-contrib    #ubuntu
 python3-pip           #ubuntu
+python3-venv          #ubuntu
 
 # Brew Packages
 aerospace             #brew
