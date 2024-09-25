@@ -2,6 +2,7 @@
 black      #brew #ubuntu
 entr       #brew #ubuntu
 gh         #brew #ubuntu
+pipx       #brew #ubuntu
 ripgrep    #brew #ubuntu
 tree       #brew #ubuntu
 
