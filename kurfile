@@ -2,7 +2,6 @@
 black      #brew #ubuntu
 entr       #brew #ubuntu
 gh         #brew #ubuntu
-pyright    #brew #ubuntu
 ripgrep    #brew #ubuntu
 tree       #brew #ubuntu
 
@@ -14,6 +13,7 @@ libssl-dev            #ubuntu
 pkg-config            #ubuntu
 postgresql            #ubuntu
 postgresql-contrib    #ubuntu
+python3-pip           #ubuntu
 
 # Brew Packages
 aerospace             #brew
@@ -40,3 +40,6 @@ mdbook            #cargo
 sqlx-cli          #cargo
 starship          #cargo
 zellij            #cargo
+
+# Pip Packages
+pyright    #pip
