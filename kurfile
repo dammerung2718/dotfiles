@@ -43,4 +43,5 @@ starship          #cargo
 zellij            #cargo
 
 # Pip Packages
+djlint     #pip
 pyright    #pip
