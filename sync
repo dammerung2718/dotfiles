@@ -11,6 +11,9 @@ command -v kur >/dev/null || cargo install kur
 kur fmt
 kur sync
 
+# go
+go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+
 # symlinks
 symlnk() {
   if test -L $2; then
