@@ -1,5 +1,4 @@
 # Common Packages
-black      #brew #ubuntu
 entr       #brew #ubuntu
 pipx       #brew #ubuntu
 ripgrep    #brew #ubuntu
@@ -7,34 +6,23 @@ tmux       #brew #ubuntu
 tree       #brew #ubuntu
 
 # Ubuntu Packages
-build-essential       #ubuntu
-cmake                 #ubuntu
-golang                #ubuntu
-libssl-dev            #ubuntu
-pkg-config            #ubuntu
-postgresql            #ubuntu
-postgresql-contrib    #ubuntu
-python3-pip           #ubuntu
-python3-venv          #ubuntu
+golang    #ubuntu
 
 # Brew Packages
 aerospace          #brew
 go                 #brew
 gopls              #brew
 mos                #brew
-neovim             #brew
 openvpn-connect    #brew
 wezterm            #brew
 
 # Cargo Packages
-atac              #cargo
 bacon             #cargo
 bob-nvim          #cargo
 cargo-outdated    #cargo
 cargo-watch       #cargo
 fd-find           #cargo
 mdbook            #cargo
-sqlx-cli          #cargo
 starship          #cargo
 
 # Pip Packages
