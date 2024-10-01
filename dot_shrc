@@ -15,6 +15,7 @@ if test $(uname) = "Darwin"; then
 fi
 
 # go
+export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/go/bin"
 
 # python

@@ -1,17 +1,13 @@
 # Common Packages
 entr       #brew #ubuntu
+jq         #brew #ubuntu
 pipx       #brew #ubuntu
 ripgrep    #brew #ubuntu
 tmux       #brew #ubuntu
 tree       #brew #ubuntu
 
-# Ubuntu Packages
-golang    #ubuntu
-
 # Brew Packages
 aerospace          #brew
-go                 #brew
-gopls              #brew
 mos                #brew
 openvpn-connect    #brew
 wezterm            #brew

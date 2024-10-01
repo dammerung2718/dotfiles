@@ -12,7 +12,20 @@ kur fmt
 kur sync
 
 # go
-go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+export PATH=$PATH:/usr/local/go/bin
+if ! command -v go >/dev/null; then
+	GOVERSION=1.23.1
+
+	GOPACKAGE=go$GOVERSION.linux-amd64
+	if test $(uname) = "Darwin"; then
+		GOPACKAGE=go$GOVERSION.darwin-arm64
+	fi
+
+	wget https://go.dev/dl/$GOPACKAGE.tar.gz
+	sudo tar -C /usr/local -xzf $GOPACKAGE.tar.gz
+	rm $GOPACKAGE.tar.gz
+fi
+go install golang.org/x/tools/gopls@latest
 
 # symlinks
 symlnk() {
