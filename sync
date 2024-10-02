@@ -6,7 +6,6 @@ if test ! -d $HOME/.cargo; then
   curl -sSf https://sh.rustup.rs | sh -s -- -y
 fi
 . "$HOME/.cargo/env"
-rustup component add rust-analyzer
 command -v kur >/dev/null || cargo install kur
 kur fmt
 kur sync

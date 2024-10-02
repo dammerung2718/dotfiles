@@ -7,8 +7,6 @@ tree       #brew #ubuntu
 
 # Brew Packages
 aerospace             #brew
-mos                   #brew
-openvpn-connect       #brew
 visual-studio-code    #brew
 wezterm               #brew
 
