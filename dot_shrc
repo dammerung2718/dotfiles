@@ -49,3 +49,6 @@ function tat {
     tmux new-session -s "$name"
   fi
 }
+
+# emacs
+export PATH="$PATH:$HOME/.config/emacs/bin"
